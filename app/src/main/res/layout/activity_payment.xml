@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="#C9E4F6"
+                android:gravity="center"
+                android:text="←"
+                android:textColor="#292929"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Payment"
+                android:textColor="#292929"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Choose Payment Method"
+            android:textColor="#292929"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Select your preferred payment method."
+            android:textColor="#777777"
+            android:textSize="13sp" />
+
+
+        <!-- PAYMENT METHODS -->
+
+        <RadioGroup
+            android:id="@+id/rgPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <!-- E-WALLET -->
+
+            <RadioButton
+                android:id="@+id/rbEwallet"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#F7DDE3"
+                android:buttonTint="#D98999"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="E-Wallet"
+                android:textColor="#292929"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- BANK -->
+
+            <RadioButton
+                android:id="@+id/rbBank"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="#DDEEFF"
+                android:buttonTint="#D98999"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Bank Transfer"
+                android:textColor="#292929"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- CARD -->
+
+            <RadioButton
+                android:id="@+id/rbCard"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="#E7DDF6"
+                android:buttonTint="#D98999"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Credit / Debit Card"
+                android:textColor="#292929"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- COD -->
+
+            <RadioButton
+                android:id="@+id/rbCod"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:background="#DDEFD9"
+                android:buttonTint="#D98999"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Cash on Delivery (COD)"
+                android:textColor="#292929"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+
+        <!-- SUMMARY -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Summary"
+                android:textColor="#292929"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSubtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Subtotal : Rp0"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvShipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Shipping : Rp15.000"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Total : Rp0"
+                android:textColor="#292929"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- PAY -->
+
+        <Button
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="22dp"
+            android:backgroundTint="#D98999"
+            android:text="PAY NOW"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Your order information will be securely processed."
+            android:textColor="#888888"
+            android:textSize="11sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>

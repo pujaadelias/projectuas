@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="#F3DDF0"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#6B4772"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="My Profile"
+                android:textColor="#392631"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#F8D0DC"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <ImageView
+                android:id="@+id/ivProfilePhoto"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:background="#FFFFFF"
+                android:contentDescription="Foto profil"
+                android:padding="3dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UJÉRA User"
+                    android:textColor="#392631"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="Email"
+                    android:textColor="#765C68"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="UJÉRA Member ✨"
+                    android:textColor="#986A7A"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="My Account"
+            android:textColor="#392631"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMyOrders"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="#D6EAF8"
+            android:text="📦   My Orders"
+            android:textAllCaps="false"
+            android:textColor="#425D70"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnMyCart"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#E9DDF7"
+            android:text="🛒   My Cart"
+            android:textAllCaps="false"
+            android:textColor="#5E4B70"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#F8E2D7"
+            android:text="✏️   Edit Profile"
+            android:textAllCaps="false"
+            android:textColor="#76574A"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#DDECF4"
+            android:text="💬   Help &amp; Support"
+            android:textAllCaps="false"
+            android:textColor="#4B6470"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#F4C6D1"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="#873F55"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="UJÉRA • Step Into Your Style"
+            android:textColor="#A38F99"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</ScrollView>

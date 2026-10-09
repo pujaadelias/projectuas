@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="#C9E4F6"
+                android:gravity="center"
+                android:text="←"
+                android:textColor="#292929"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Product Detail"
+                android:textColor="#292929"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="18dp"
+            android:background="#DDEEFF"
+            android:contentDescription="Foto produk sepatu"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:letterSpacing="0.12"
+            android:text="UJÉRA"
+            android:textColor="#A95F6D"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Urban Runner"
+            android:textColor="#292929"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="★ 4.8 (124 reviews)"
+            android:textColor="#555555"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Rp399.000"
+            android:textColor="#292929"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Color"
+            android:textColor="#292929"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/colorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnColorWhite"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:backgroundTint="#EDEDED"
+                android:minHeight="48dp"
+                android:text="White"
+                android:textColor="#292929"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnColorPink"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F7C8D0"
+                android:minHeight="48dp"
+                android:text="Pink"
+                android:textColor="#292929"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnColorBlack"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#D8D8D8"
+                android:minHeight="48dp"
+                android:text="Black"
+                android:textColor="#292929"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Size"
+            android:textColor="#292929"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/sizeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSize38"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:minHeight="48dp"
+                android:minWidth="0dp"
+                android:text="38"
+                android:textColor="#292929"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnSize39"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:minHeight="48dp"
+                android:minWidth="0dp"
+                android:text="39"
+                android:textColor="#292929"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnSize40"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F7C8D0"
+                android:minHeight="48dp"
+                android:minWidth="0dp"
+                android:text="40"
+                android:textColor="#292929"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnSize41"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:minHeight="48dp"
+                android:minWidth="0dp"
+                android:text="41"
+                android:textColor="#292929"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnSize42"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF"
+                android:minHeight="48dp"
+                android:minWidth="0dp"
+                android:text="42"
+                android:textColor="#292929"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Description"
+            android:textColor="#292929"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Product description"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Customer Reviews"
+                android:textColor="#292929"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvReviewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="124 reviews"
+                android:textColor="#A95F6D"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvReviewPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#EAF4FB"
+            android:padding="15dp"
+            android:text="“Very comfortable and the design is beautiful. Perfect for everyday use!”"
+            android:textColor="#555555"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#D98999"
+            android:minHeight="48dp"
+            android:text="ADD TO CART"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnBuyNow"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#C9E4F6"
+            android:minHeight="48dp"
+            android:text="BUY NOW"
+            android:textColor="#292929"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+</ScrollView>

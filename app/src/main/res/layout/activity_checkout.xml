@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF9F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="#C9E4F6"
+                android:gravity="center"
+                android:text="←"
+                android:textColor="#292929"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Checkout"
+                android:textColor="#292929"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+
+        <!-- TITLE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Delivery Information"
+            android:textColor="#292929"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+        <!-- NAME -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Full Name"
+            android:textColor="#444444"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF"
+            android:hint="Enter your full name"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="#292929"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+
+        <!-- PHONE -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Phone Number"
+            android:textColor="#444444"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF"
+            android:hint="08xxxxxxxxxx"
+            android:inputType="phone"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="#292929"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+
+        <!-- ADDRESS -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Delivery Address"
+            android:textColor="#444444"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF"
+            android:gravity="top"
+            android:hint="Enter your complete address"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:textColor="#292929"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+
+        <!-- SHIPPING -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Shipping Method"
+            android:textColor="#292929"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgShipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rbRegular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#DDEEFF"
+                android:buttonTint="#D98999"
+                android:padding="10dp"
+                android:text="Regular • Rp15.000"
+                android:textColor="#292929"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rbExpress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:background="#F7DDE3"
+                android:buttonTint="#D98999"
+                android:padding="10dp"
+                android:text="Express • Rp30.000"
+                android:textColor="#292929"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+
+        <!-- SUMMARY -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Summary"
+                android:textColor="#292929"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSubtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Subtotal : Rp0"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvShipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Shipping : Rp15.000"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Total : Rp0"
+                android:textColor="#292929"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- CONTINUE -->
+
+        <Button
+            android:id="@+id/btnContinuePayment"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D98999"
+            android:text="CONTINUE TO PAYMENT"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+</ScrollView>
